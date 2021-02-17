@@ -12,6 +12,8 @@ import datetime
 time.sleep(2)
 print("running")
 #clean up code by separating it into functions so we can use setters and getters (encapsulate it)
+#Use another library or an API call for the topicList instead of the small array
+#Verify actions have completed by extracting data from the task manager before proceeding to each step.
 
 def click(x,y):
     win32api.SetCursorPos((x,y))
@@ -44,41 +46,6 @@ try:
     im1.save(str(topicList[randIndex]) + str(fileExtension) + '.png')
     print("saved screenshot")
     
-    #pyautogui.moveTo(740, 456)
-    #time.sleep(1)
-    #pyautogui.moveTo(374, 228)
-
-    #press 'win' key
-    #type "Google Chrome" and wait 10 seconds
-    #press "enter" and wait 10 seconds
-    #press "ctrl+T" to open a new tab
-    #search from the topicList array
-    
-
-    #waiting = 60 + 240*random.random()
-    #topic = random.randint(0,8)
-    #print("let us wait", waiting/60, " minutes before searching", topicList[topic])
-    #time.sleep(waiting)
-
-    #skipAd = pyautogui.locateCenterOnScreen('adBannerHideout.PNG', confidence = 0.90)
-    #if skipAd != None and stage == "initial":
-        #click(753, 538)
-        #print("skipping an ad")
-        #time.sleep(30*random.random())
-
-    #enterSearch = pyautogui.locateCenterOnScreen('hideoutSearchBar.PNG', confidence = 0.95)
-    #if enterSearch != None:#trigger a new search, reset the timer
-        #click(enterSearch.x, enterSearch.y)
-        #pyautogui.write(topicList[topic], interval=0.25)
-        #time.sleep(3)
-        #press('enter')
-        #time.sleep(15)
-        #click(406, 303)
-
-        #skipAd2 = pyautogui.locateCenterOnScreen('adBannerHideout.PNG', confidence = 0.90)
-        #if skipAd2 != None:
-            #click(753, 538)
-            #print("skipping an ad")
 
 except KeyboardInterrupt:
     print("pressed a key, now quitting")
