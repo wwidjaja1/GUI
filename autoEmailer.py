@@ -41,7 +41,7 @@ def openChrome():
 
 def writeRecipients():
 
-    recipientList = ["anonymousvine20@gmail.com", "jasonrobinson625@yahoo.com"]
+    recipientList = ["email1@gmail.com", "email2@yahoo.com"]
     
     for index, value in enumerate(recipientList):
         pyautogui.write(value, interval = 0.25)
